@@ -48,7 +48,8 @@ class ServiceProvider extends BaseServiceProvider
                 config('services.japanpost.secret_key'),
                 config('services.japanpost.base_uri'),
                 $app->make('cache.store'),
-                $app->make(HttpClient::class)
+                $app->make(HttpClient::class),
+                config('services.japanpost.cache_ttl')
             );
 
             return $token;

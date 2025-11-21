@@ -18,14 +18,13 @@ class Token
 
     protected CacheInterface $cache;
 
-    protected int $cacheTtl = 3600;
-
     public function __construct(
         protected string $clientId,
         protected string $secretKey,
         protected string $baseUri,
         ?CacheInterface $cache = null,
         ?HttpClient $httpClient = null,
+        protected int $cacheTtl = 3600,
     ) {
         $this->cache = $cache ?? new Psr16Cache(new FilesystemAdapter(
             namespace: self::CACHE_PREFIX,

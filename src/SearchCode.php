@@ -43,7 +43,7 @@ class SearchCode
         int $choikitype = 1,
         int $searchtype = 1
     ): array {
-        $token    = $this->token ?: (new Token($this->clientId, $this->secretKey, $this->baseUri))->getToken();
+        $token    = $this->token ?: app('japanpost.token')->getToken();
         $response = json_decode($this->getHttpClient()->get('api/v1/searchcode/' . $code, [
             'headers' => [
                 'Authorization' => 'Bearer ' . $token,
