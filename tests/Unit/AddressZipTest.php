@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Yuxin\Japanpost\AddressZip;
+use Shanjing\Japanpost\AddressZip;
 
 test('address zip can be instantiated with required parameters', function (): void {
     $addressZip = new AddressZip('test_client_id', 'test_secret_key', 'https://api.da.pf.japanpost.jp/', null);

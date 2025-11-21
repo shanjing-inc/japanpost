@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Yuxin\Japanpost\Exceptions;
+namespace Shanjing\Japanpost\Exceptions;
 
 class HttpException extends Exception
 {

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-use Yuxin\Japanpost\Exceptions\AddressesNotFoundException;
-use Yuxin\Japanpost\Exceptions\Exception;
-use Yuxin\Japanpost\Exceptions\HttpException;
+use Shanjing\Japanpost\Exceptions\AddressesNotFoundException;
+use Shanjing\Japanpost\Exceptions\Exception;
+use Shanjing\Japanpost\Exceptions\HttpException;
 
 test('base exception extends php exception', function (): void {
     $exception = new Exception('Test message');

@@ -1,10 +1,10 @@
 {
-  "name": "zhaiyuxin/japanpost",
+  "name": "shanjing/japanpost",
   "type": "library",
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Yuxin\\Japanpost\\": "src/",
+      "Shanjing\\Japanpost\\": "src/",
       "Tests\\": "tests/"
     },
     "files": [
@@ -70,10 +70,10 @@
   "extra": {
         "laravel": {
             "providers": [
-                "Yuxin\\Japanpost\\ServiceProvider"
+                "Shanjing\\Japanpost\\ServiceProvider"
             ],
             "aliases": {
-              "Japanpost": "Yuxin\\Japanpost\\Facades\\Japanpost"
+              "Japanpost": "Shanjing\\Japanpost\\Facades\\Japanpost"
             }
         }
     }

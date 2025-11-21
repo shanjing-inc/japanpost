@@ -38,7 +38,7 @@ composer require zhaiyuxin/japanpost
 ### 发布配置文件（可选）
 
 ```bash
-php artisan vendor:publish --provider="Yuxin\Japanpost\ServiceProvider"
+php artisan vendor:publish --provider="Shanjing\Japanpost\ServiceProvider"
 ```
 
 这将发布配置文件到 `config/japanpost.php`。
@@ -80,7 +80,7 @@ JAPANPOST_BASE_URI=https://api.da.pf.japanpost.jp/
 为了提供更简洁的 API，本包提供了一个统一的 Facade 接口。您可以通过 Facade 轻松访问所有服务：
 
 ```php
-use Yuxin\Japanpost\Facades\Japanpost;
+use Shanjing\Japanpost\Facades\Japanpost;
 
 // 获取 Token 服务
 $token = Japanpost::token();
@@ -109,7 +109,7 @@ $addresses = $searchCode->search('150-0002');
 ### 1. 获取 API 令牌
 
 ```php
-use Yuxin\Japanpost\Token;
+use Shanjing\Japanpost\Token;
 use Psr\SimpleCache\CacheInterface;
 
 // 通过依赖注入获取（推荐，自动启用缓存）
@@ -139,7 +139,7 @@ $token = $tokenService->getToken();
 ### 2. 地址查询
 
 ```php
-use Yuxin\Japanpost\AddressZip;
+use Shanjing\Japanpost\AddressZip;
 
 // 通过依赖注入获取
 $addressService = app('japanpost.address_zip');
@@ -169,7 +169,7 @@ $addresses = $addressService->search([
 ### 3. 邮编搜索
 
 ```php
-use Yuxin\Japanpost\SearchCode;
+use Shanjing\Japanpost\SearchCode;
 
 // 通过依赖注入获取
 $searchService = app('japanpost.search_code');
@@ -219,12 +219,12 @@ $addressService->setGuzzleOptions([
 
 包提供了以下自定义异常：
 
-- `Yuxin\Japanpost\Exceptions\HttpException` - HTTP 请求异常
-- `Yuxin\Japanpost\Exceptions\AddressesNotFoundException` - 地址未找到异常
-- `Yuxin\Japanpost\Exceptions\Exception` - 通用异常
+- `Shanjing\Japanpost\Exceptions\HttpException` - HTTP 请求异常
+- `Shanjing\Japanpost\Exceptions\AddressesNotFoundException` - 地址未找到异常
+- `Shanjing\Japanpost\Exceptions\Exception` - 通用异常
 
 ```php
-use Yuxin\Japanpost\Exceptions\AddressesNotFoundException;
+use Shanjing\Japanpost\Exceptions\AddressesNotFoundException;
 
 try {
     $addresses = $addressService->search(['prefecture' => '東京都']);

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-use Yuxin\Japanpost\AddressZip;
-use Yuxin\Japanpost\Facades\Japanpost;
-use Yuxin\Japanpost\Japanpost as JapanpostService;
-use Yuxin\Japanpost\SearchCode;
-use Yuxin\Japanpost\Token;
+use Shanjing\Japanpost\AddressZip;
+use Shanjing\Japanpost\Facades\Japanpost;
+use Shanjing\Japanpost\Japanpost as JapanpostService;
+use Shanjing\Japanpost\SearchCode;
+use Shanjing\Japanpost\Token;
 
 test('facade class exists', function (): void {
     expect(class_exists(Japanpost::class))->toBeTrue();

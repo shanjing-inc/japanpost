@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Yuxin\Japanpost\SearchCode;
+use Shanjing\Japanpost\SearchCode;
 
 test('search code can be instantiated with required parameters', function (): void {
     $searchCode = new SearchCode('test_client_id', 'test_secret_key', 'https://api.da.pf.japanpost.jp/');

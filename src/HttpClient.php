@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Yuxin\Japanpost;
+namespace Shanjing\Japanpost;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
-use Yuxin\Japanpost\Exceptions\HttpException;
+use Shanjing\Japanpost\Exceptions\HttpException;
 
 class HttpClient
 {

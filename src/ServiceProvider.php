@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Yuxin\Japanpost;
+namespace Shanjing\Japanpost;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 use Override;

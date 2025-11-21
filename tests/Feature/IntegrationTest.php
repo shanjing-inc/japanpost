@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\ConnectException;
-use Yuxin\Japanpost\AddressZip;
-use Yuxin\Japanpost\HttpClient;
-use Yuxin\Japanpost\SearchCode;
-use Yuxin\Japanpost\Token;
+use Shanjing\Japanpost\AddressZip;
+use Shanjing\Japanpost\HttpClient;
+use Shanjing\Japanpost\SearchCode;
+use Shanjing\Japanpost\Token;
 
 test('token integration with services', function (): void {
     $token = new Token(

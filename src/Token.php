@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Yuxin\Japanpost;
+namespace Shanjing\Japanpost;
 
 use GuzzleHttp\Client;
 use Psr\SimpleCache\CacheInterface;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 use Symfony\Component\Cache\Psr16Cache;
-use Yuxin\Japanpost\Exceptions\HttpException;
+use Shanjing\Japanpost\Exceptions\HttpException;
 
 class Token
 {

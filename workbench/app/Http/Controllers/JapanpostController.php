@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Workbench\App\Http\Controllers;
 
-use Yuxin\Japanpost\Facades\Japanpost;
+use Shanjing\Japanpost\Facades\Japanpost;
 
 class JapanpostController
 {

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Yuxin\Japanpost;
+namespace Shanjing\Japanpost;
 
 use GuzzleHttp\Client;
-use Yuxin\Japanpost\Exceptions\AddressesNotFoundException;
+use Shanjing\Japanpost\Exceptions\AddressesNotFoundException;
 
 class AddressZip
 {

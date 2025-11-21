@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Yuxin\Japanpost\ServiceProvider;
+use Shanjing\Japanpost\ServiceProvider;
 
 test('service provider can be instantiated', function (): void {
     $app      = app();

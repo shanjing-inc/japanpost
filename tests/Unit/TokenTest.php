@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Yuxin\Japanpost\Token;
+use Shanjing\Japanpost\Token;
 
 test('token can be instantiated with required parameters', function (): void {
     $token = new Token('test_client_id', 'test_secret_key', 'https://api.da.pf.japanpost.jp/');
@@ -49,7 +49,7 @@ test('token handles different base uris', function (): void {
     ];
 
     foreach ($baseUris as $baseUri) {
-        $httpClient = new Yuxin\Japanpost\HttpClient($baseUri, []);
+        $httpClient = new Shanjing\Japanpost\HttpClient($baseUri, []);
         $token      = new Token('test_client_id', 'test_secret_key', $baseUri, null, $httpClient);
         $client     = $token->getHttpClient();
 
